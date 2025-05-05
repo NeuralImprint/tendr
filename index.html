@@ -1,0 +1,71 @@
+import React from "react";
+
+export default function CustomerDashboard() {
+  return (
+    <div className="min-h-screen bg-[#fdf6e3] p-6">
+      <div className="max-w-6xl mx-auto">
+        <h1 className="text-4xl font-bold text-center text-[#2c3e50] mb-8">
+          Welcome to Your Dashboard, Ankit!
+        </h1>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+
+          {/* Upcoming Events */}
+          <Card title="Upcoming Events" description="Stay updated with all your future bookings and event countdowns." />
+
+          {/* Wishlist / Favorites */}
+          <Card title="Wishlist" description="Your favorite vendors saved for easy access and comparison." />
+
+          {/* Event Planner / Checklist */}
+          <Card title="Event Checklist" description="Keep track of tasks and milestones for your upcoming events." />
+
+          {/* Messages / Chat Center */}
+          <Card title="Messages" description="Chat with vendors and manage conversations seamlessly." />
+
+          {/* Notifications / Alerts */}
+          <Card title="Notifications" description="Get important reminders, alerts and vendor updates instantly." />
+
+          {/* Saved Themes / Inspirations */}
+          <Card title="Event Themes" description="Access your saved styles, colors and decor inspirations." />
+
+          {/* Feedback & Ratings */}
+          <Card title="Feedback & Ratings" description="Review past vendors and explore ratings." />
+
+          {/* Event Timeline */}
+          <Card title="Event Timeline" description="Visualize your complete event journey and progress." />
+
+          {/* Document Vault */}
+          <Card title="Documents" description="Access all your uploaded contracts, invoices, and IDs." />
+
+          {/* Profile & Preferences */}
+          <Card title="My Preferences" description="Manage your profile, event types, and theme interests." />
+
+          {/* Referral System */}
+          <Card title="Referrals & Rewards" description="Invite friends, track bonuses, and earn rewards." />
+
+          {/* Help Center */}
+          <Card title="Support Center" description="Need help? Get your questions answered or raise a ticket." />
+
+          {/* Blog Feed / Tips */}
+          <Card title="Planning Tips" description="Explore useful articles, guides and vendor spotlights." />
+
+          {/* Bookings */}
+          <Card title="My Bookings" description="Check your past event bookings and vendor engagements." />
+
+          {/* Payments */}
+          <Card title="Payments" description="Track invoices, payments, and due balances in one place." />
+
+        </div>
+      </div>
+    </div>
+  );
+}
+
+function Card({ title, description }) {
+  return (
+    <div className="bg-white rounded-2xl p-6 shadow-lg hover:shadow-xl transition-shadow duration-300 border border-blue-100">
+      <h2 className="text-xl font-semibold text-blue-700 mb-2">{title}</h2>
+      <p className="text-gray-600 text-sm">{description}</p>
+    </div>
+  );
+}

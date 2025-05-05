@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tendr - Vendor Browsing</title>
+  <link rel="stylesheet" href="styling.css">
+</head>
+<body>
+  
+  <header class="top-header">
+    <div class="overlay">
+      <img src="tendrbg.jpg" alt="Tendr Logo" class="logo-img">
+      
+    </div>
+  </header>
+
+  <div class="container">
+    <!-- Sidebar Panel -->
+    <aside class="sidebar">
+      <h2>Plan Your Event</h2>
+      <label>Event Type</label>
+      <select>
+        <option>Wedding</option>
+        <option>Birthday</option>
+        <option>Corporate</option>
+        <option>Others</option>
+      </select>
+
+      <label>Date</label>
+      <input type="date">
+
+      <label>Location</label>
+      <input type="text" placeholder="Enter city or venue">
+
+      <label>Number of Guests</label>
+      <input type="number" min="1" placeholder="e.g. 50">
+
+      <button class="recommend-btn">Recommended Vendors</button>
+
+      <h3>Filters</h3>
+      <div class="filter-list">
+        <label><input type="checkbox"> Customizable Menu</label>
+        <label><input type="checkbox"> Vegan Option</label>
+        <label><input type="checkbox"> Organic Ingredient</label>
+        <label><input type="checkbox"> Kid-Friendly Menu</label>
+        <label><input type="checkbox"> Locally Sourced Produce</label>
+        <label><input type="checkbox"> On-Site Chef</label>
+        <label><input type="checkbox"> Wait Staff Included</label>
+        <label><input type="checkbox"> Bartender Service</label>
+        <label><input type="checkbox"> Uniformed Staff</label>
+        <label><input type="checkbox"> Multi-Language Staff</label>
+        <label><input type="checkbox"> Event Coordinator Support</label>
+        <label><input type="checkbox"> Setup & Cleanup Included</label>
+      </div>
+    </aside>
+
+    
+    <main class="main-content">
+      <h1>Vendors Near You</h1>
+      <div class="vendor-list" id="vendorList"></div>
+    </main>
+  </div>
+
+  
+  <footer class="footer">
+    <div class="footer-links">
+      <a href="#">Support</a>
+      <a href="#">Help Center</a>
+      <a href="#">Vendor Support</a>
+      <a href="#">Vendor</a>
+      <a href="#">Get in Touch</a>
+    </div>
+    <div class="socials">
+      <a href="#"><img src="instagram.png" alt="Instagram"></a>
+      <a href="#"><img src="twitter.png" alt="Twitter"></a>
+      <a href="#"><img src="facebook.png" alt="Facebook"></a>
+      <a href="#"><img src="linkedin.png" alt="LinkedIn"></a>
+    </div>
+    <p class="copyright">
+      © 2025 Tendr. All rights reserved.
+    </p>
+  </footer>
+
+  <script src="scripting.js"></script>
+</body>
+</html>

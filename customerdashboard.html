@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Customer Dashboard</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      body {
+        background-color: #fdf6e3;
+        background-image: url('./image.png'); /* use your custom background */
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        backdrop-filter: blur(6px);
+      }
+    </style>
+  </head>
+  <body class="min-h-screen p-6 bg-opacity-90">
+    <div class="max-w-7xl mx-auto bg-white bg-opacity-90 rounded-2xl p-6 shadow-xl">
+      <h1 class="text-4xl font-bold mb-6 text-center text-gray-800">Customer Dashboard</h1>
+
+      <!-- Sections Grid -->
+      <div class="grid md:grid-cols-3 gap-6">
+
+        <!-- Quick Access to Vendors -->
+        <div class="bg-blue-100 p-4 rounded-xl shadow-md col-span-1">
+          <h2 class="text-2xl font-semibold text-blue-700 mb-4">Quick Access</h2>
+          <div class="space-y-3">
+            <button class="w-full bg-white px-4 py-2 rounded-lg shadow hover:bg-blue-200 text-left">🎀 Decoration</button>
+            <button class="w-full bg-white px-4 py-2 rounded-lg shadow hover:bg-blue-200 text-left">🍽️ Catering</button>
+            <button class="w-full bg-white px-4 py-2 rounded-lg shadow hover:bg-blue-200 text-left">🎧 DJ</button>
+            <button class="w-full bg-white px-4 py-2 rounded-lg shadow hover:bg-blue-200 text-left">🎶 Music</button>
+            <button class="w-full bg-white px-4 py-2 rounded-lg shadow hover:bg-blue-200 text-left">🏛️ Venues</button>
+          </div>
+        </div>
+
+        <!-- Previous Bookings -->
+        <div class="bg-blue-100 p-4 rounded-xl shadow-md md:col-span-2">
+          <h2 class="text-2xl font-semibold text-blue-700 mb-4">Previous Bookings</h2>
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div class="bg-white p-4 rounded-lg shadow">
+              <h3 class="font-semibold text-lg text-purple-600">DJ BeatBox</h3>
+              <p class="text-sm text-gray-600">📍 Delhi | 📅 20 Feb 2024</p>
+              <p class="text-sm mt-1">💸 ₹8,000 | Status: ✅ Confirmed</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+              <h3 class="font-semibold text-lg text-purple-600">Gourmet Gala</h3>
+              <p class="text-sm text-gray-600">📍 Noida | 📅 5 Jan 2024</p>
+              <p class="text-sm mt-1">💸 ₹15,000 | Status: ✅ Completed</p>
+            </div>
+            <div class="bg-white p-4 rounded-lg shadow">
+              <h3 class="font-semibold text-lg text-purple-600">Venue Royale</h3>
+              <p class="text-sm text-gray-600">📍 Gurugram | 📅 12 Dec 2023</p>
+              <p class="text-sm mt-1">💸 ₹25,000 | Status: ✅ Completed</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Personal Info Section -->
+      <div class="mt-8 bg-blue-100 p-6 rounded-xl shadow-md">
+        <h2 class="text-2xl font-semibold text-blue-700 mb-4">Personal Information</h2>
+        <form class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Full Name</label>
+            <input type="text" value="Ankit Kumar Thakur" class="w-full mt-1 px-4 py-2 rounded-lg border border-blue-300" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Email</label>
+            <input type="email" value="ankit@example.com" class="w-full mt-1 px-4 py-2 rounded-lg border border-blue-300" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">Phone</label>
+            <input type="text" value="+91-9876543210" class="w-full mt-1 px-4 py-2 rounded-lg border border-blue-300" />
+          </div>
+          <div>
+            <label class="block text-sm font-medium text-gray-700">City</label>
+            <input type="text" value="New Delhi" class="w-full mt-1 px-4 py-2 rounded-lg border border-blue-300" />
+          </div>
+        </form>
+        <button class="mt-4 bg-blue-600 text-white px-6 py-2 rounded-xl hover:bg-blue-700 transition">Update Info</button>
+      </div>
+    </div>
+  </body>
+</html>
